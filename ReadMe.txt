@@ -1,4 +1,4 @@
-=== Show Visitor IP ===
+=== Show IP Info ===
 Contributors: PyVold
 Tags: ip address, country code, region, currency, languages, city, country name, user, visitor, display, shortcode, vs, rockon 
 Requires at least: 5.6
@@ -19,7 +19,7 @@ Note: ipdevops.com (public API for iptools)
 
 == Installation ==
 
-Use WordPress Add New Plugin feature, searching "Show Visitor IP", or download the archive.
+Use WordPress Add New Plugin feature, searching "Show IP Info", or download the archive.
 
 1. Log in to your website administrator panel
 2. Go to Plugins page, and add new plugin
