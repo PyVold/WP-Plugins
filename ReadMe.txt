@@ -15,7 +15,7 @@ The plugin fetches the IP address of the visitor from the HTTP header and then i
 
 Very simple to install, simple to use, light weight.
 
-Note: ipdevops.com (public API for iptools)
+Note: ipdevops.com (public API for iptools) privacy-policy: https://ipdevops.com/privacy-policy
 
 == Installation ==
 
