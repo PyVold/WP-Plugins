@@ -28,11 +28,11 @@ Use WordPress Add New Plugin feature, searching "Show IP Info", or download the 
 5. Then click Activate Plugin button
 
 Shortcodes:
-<code>[show_ip]</code>
-<code>[showip_info]</code>
-<code>[showip_info type="country"]</code>
-<code>[showip_info type="languages"]</code>
-<code>[showip_info type="currency"]</code>
+[show_ip]
+[showip_info]
+[showip_info type="country"]
+[showip_info type="languages"]
+[showip_info type="currency"]
 
 == Screenshots ==
 
