@@ -2,7 +2,7 @@
 /**
 Plugin Name: Show IP info
 Description: The plugin fetchs the IP address of the visitor and then return information such like: languages, currency, country (and more in future versions)
-Version: 1.0.1
+Version: 2.0
 Author URI: https://www.pyvold.com
  */
 
@@ -29,21 +29,14 @@ Author URI: https://www.pyvold.com
     } else {
         $ip = $remote;
     }
-	$ip_info = @json_decode( wp_remote_retrieve_body( wp_remote_get( "https://www.ipdevops.com/api/remip/".$ip ) ) );;
+	$ip_info = @json_decode( wp_remote_retrieve_body( wp_remote_get( "https://www.ipdevops.com/api/remip/".$ip ) ) );
 	
       $showvip_data = '';
       $showvip_ltype = $showvip['type'];
 	  
     if($ip_info && $ip_info->country != null){
-		
-	 if($showvip_ltype == 'country'){
-	   $showvip_data = $ip_info->country;
-	 } elseif($showvip_ltype == 'languages'){
-	   $showvip_data = $ip_info->languages;
-	 } elseif($showvip_ltype == 'currency'){
-	   $showvip_data = $ip_info->currency;
-	 }
-
+        $showvip_shortcode = strtolower($showvip_ltype);
+        $showvip_data = $ip_info->$showvip_shortcode;
     }
 
     return $showvip_data;
