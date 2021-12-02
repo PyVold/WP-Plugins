@@ -3,7 +3,7 @@ Contributors: PyVold
 Tags: ip address, country code, region, currency, languages, city, country name, user, visitor, display, shortcode, vs, rockon 
 Requires at least: 5.6
 Tested up to: 5.8.2
-Stable tag: 1.0.1
+Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,16 +29,20 @@ Use WordPress Add New Plugin feature, searching "Show IP Info", or download the 
 
 Shortcodes:
 [show_ip]
-[showip_info]
 [showip_info type='country']
 [showip_info type='languages']
 [showip_info type='currency']
+[showip_info type='capital']
 
 == Screenshots ==
 
 later
 
 == Changelog ==
+= 2.0 (2021/12/03)
+* shortcode types are no longer case sensitive, you can write country, Country, CoUnTrY..etc
+* Country capital was added
+
 = 1.0.1 (2021/12/02)
 * API call fix
 * updating the short codes
